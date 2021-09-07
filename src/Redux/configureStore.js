@@ -1,10 +1,12 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux';
-import logger from 'redux-logger';
+import { loadingBarReducer } from 'react-redux-loading-bar';
 import thunk from 'redux-thunk';
-import casesReducer from './positive/cases';
+import logger from 'redux-logger';
+import countriesReducer from './countries/countries';
 
 const reducer = combineReducers({
-  cases: casesReducer,
+  countries: countriesReducer,
+  loadingBar: loadingBarReducer,
 });
 
 const store = createStore(
