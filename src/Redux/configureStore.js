@@ -1,14 +1,15 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import logger from 'redux-logger';
+import thunk from 'redux-thunk';
+import casesReducer from './positive/cases';
 
 const reducer = combineReducers({
-  
-  // additional reducers could be added here
+  cases: casesReducer,
 });
 
 const store = createStore(
   reducer,
-  applyMiddleware(logger),
+  applyMiddleware(thunk, logger),
 );
 
 export default store;
