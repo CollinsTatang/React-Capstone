@@ -1,7 +1,5 @@
-import
-{
-  BrowserRouter as Router, Route, Switch,
-} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import LoadingBar from 'react-redux-loading-bar';
 import Home from './components/home/Home';
 import Details from './components/details/Details';
 import './App.css';
@@ -13,7 +11,7 @@ const routes = [
     component: Home,
   },
   {
-    path: '/details/:country',
+    path: '/country/:name',
     name: 'Details',
     component: Details,
   },
@@ -21,6 +19,7 @@ const routes = [
 
 const App = () => (
   <Router>
+    <LoadingBar />
     <Switch>
       {routes.map(({ path, component }) => (
         <Route key={path} exact path={path} component={component} />
