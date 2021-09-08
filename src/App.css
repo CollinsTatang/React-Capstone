@@ -1,3 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.bg-pink2 {
+  background: #fd33a2;
+}
+
+.bg-pink1 {
+  background-color: #e70983 !important;
+}
+
 body {
-  background-color: aliceblue;
+  background-color: #e70983 !important;
 }
