@@ -1,35 +1,23 @@
-const apiEndpoint = 'https://api.covid19tracking.narrativa.com/api/';
-const initialState = { countries: [], totalConfirmed: 0 };
+const initialState = { countries: [], totalConfirmed: 0, ready: false };
 
 export const FETCH_DATA = 'data/FETCH_DATA';
 const ADD_COUNTRY = 'countries/ADD_REGION';
 const SET_TOTAL = 'numbers/SET_TOTAL_CONFIRMED';
-
-const fetchCovidData = async () => {
-  const today = new Date().toISOString().split('T')[0];
-  let res = await fetch(`${apiEndpoint}/${today}`);
-  res = await res.json();
-  return res;
-};
+const CHANGE_READY = 'ready/CHANGE';
 
 export const addCountry = (country) => ({
   type: ADD_COUNTRY,
   payload: country,
 });
 
-const setTotal = (total) => ({
+export const setTotal = (total) => ({
   type: SET_TOTAL,
   payload: total,
 });
 
-export const fetchData = async (dispatch) => {
-  const data = await fetchCovidData();
-  const today = new Date().toISOString().split('T')[0];
-  dispatch(setTotal(data.total.today_confirmed));
-  Object.keys(data.dates[today].countries).forEach((country) => {
-    dispatch(addCountry(data.dates[today].countries[country]));
-  });
-};
+export const changeReadyState = () => ({
+  type: CHANGE_READY,
+});
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
@@ -37,6 +25,8 @@ const reducer = (state = initialState, action) => {
       return { ...state, countries: [...state.countries, action.payload] };
     case SET_TOTAL:
       return { ...state, totalConfirmed: action.payload };
+    case CHANGE_READY:
+      return { ...state, ready: !state.ready };
     default:
       return state;
   }
@@ -44,4 +34,5 @@ const reducer = (state = initialState, action) => {
 
 export const countries = (state) => state.countries;
 export const totalConfirmed = (state) => state.totalConfirmed;
+export const ready = (state) => state.ready;
 export default reducer;
