@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 import { BrowserRouter as Router } from 'react-router-dom';
 import App from './App';
 import store from './Redux/configureStore';
-import { fetchData } from './Redux/countries/covidData';
+import { fetchData } from './narrativa';
 
 store.dispatch(fetchData);
 

@@ -1,7 +1,7 @@
 import { Row, Col } from 'react-bootstrap';
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
-import { countries } from '../../Redux/countries/covidData';
+import { countries } from '../../Redux/countries/cases';
 import World from '../world.svg';
 
 export default function Details() {
