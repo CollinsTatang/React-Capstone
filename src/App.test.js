@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 import { BrowserRouter as Router } from 'react-router-dom';
 import store from './Redux/configureStore';
 import App from './App';
-import { addCountry } from './Redux/countries/covidData';
+import { addCountry } from './Redux/countries/cases';
 
 test('Should display the header', () => {
   render(
