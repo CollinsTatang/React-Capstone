@@ -4,7 +4,7 @@ const SET_TOTAL = 'numbers/SET_TOTAL_CONFIRMED';
 const CHANGE_READY = 'ready/CHANGE';
 
 describe('Testing actions of receiving data', () => {
-  it('reciveReservationMissions working fine', () => {
+  it('should handle a country\'s data being added to the store', () => {
     const payload = [];
     const expected = {
       type: ADD_COUNTRY,
@@ -13,7 +13,7 @@ describe('Testing actions of receiving data', () => {
     expect(addCountry(payload)).toEqual(expected);
   });
 
-  it('reciveReservationrockets working fine', () => {
+  it('Set cases working fine', () => {
     const payload = '38993';
     const expected = {
       type: SET_TOTAL,
@@ -22,7 +22,7 @@ describe('Testing actions of receiving data', () => {
     expect(setTotal(payload)).toEqual(expected);
   });
 
-  it('reciveReservationrockets working fine', () => {
+  it('Change  working fine', () => {
     const payload = '38993';
     const expected = {
       type: CHANGE_READY,
