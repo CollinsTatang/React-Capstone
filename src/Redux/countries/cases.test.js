@@ -1,36 +1,32 @@
-import reducer, { addCountry } from './cases';
+import  { addCountry, setTotal, changeReadyState } from './cases';
+const ADD_COUNTRY = 'countries/ADD_REGION';
+const SET_TOTAL = 'numbers/SET_TOTAL_CONFIRMED';
+const CHANGE_READY = 'ready/CHANGE';
 
-test('should return the initial state', () => {
-  expect(reducer(undefined, {})).toEqual(
-    {
-      countries: [],
-      totalConfirmed: 0,
-    },
-  );
-});
+describe('Testing actions of receiving data', () => {
+  it('reciveReservationMissions working fine', () => {
+    const payload = [];
+    const expected = {
+      type: ADD_COUNTRY,
+      payload,
+    };
+    expect(addCountry(payload)).toEqual(expected);
+  });
 
-test('should handle a country\'s data being added to the store', () => {
-  const previousState = {
-    countries: [],
-    totalConfirmed: 0,
-  };
+  it('reciveReservationrockets working fine', () => {
+    const payload = '38993';
+    const expected = {
+      type: SET_TOTAL,
+      payload,
+    };
+    expect(setTotal(payload)).toEqual(expected);
+  });
 
-  const newState = reducer(previousState, addCountry({
-    name: 'Cameroon',
-    id: 'Douala',
-    total_confirmed: 85000,
-  }));
-
-  expect(newState).toEqual(
-    {
-      countries: [
-        {
-          name: 'Cameroon',
-          id: 'Douala',
-          total_confirmed: 85000,
-        },
-      ],
-      totalConfirmed: 0,
-    },
-  );
+  it('reciveReservationrockets working fine', () => {
+    const payload = '38993';
+    const expected = {
+      type: CHANGE_READY,
+    };
+    expect(changeReadyState(payload)).toEqual(expected);
+  });
 });
