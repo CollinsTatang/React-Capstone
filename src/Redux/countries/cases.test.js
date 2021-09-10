@@ -1,4 +1,5 @@
-import  { addCountry, setTotal, changeReadyState } from './cases';
+import { addCountry, setTotal, changeReadyState } from './cases';
+
 const ADD_COUNTRY = 'countries/ADD_REGION';
 const SET_TOTAL = 'numbers/SET_TOTAL_CONFIRMED';
 const CHANGE_READY = 'ready/CHANGE';
