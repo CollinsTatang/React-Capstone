@@ -4,6 +4,8 @@
 > This is a mobile web application that displays a list of metrics generated from the [Narrativa API](https://covid19tracking.narrativa.com/index_en.html). This API provides data on COVID-19.
 
 ![screenshot](COVID.png)
+## Vidoe Presentation
+[Loom](https://www.loom.com/share/6ec1caeab4424d758d40b6d95229e8bc)
 
 ## Milestones completed:
 - Create a new React App using CRA.
@@ -22,9 +24,9 @@
 
 - React.Js
 - Redux
-  
   [Live Link](https://admiring-edison-ccbd9a.netlify.app/)
- ## Getting Started
+
+   ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
 
