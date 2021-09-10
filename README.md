@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+![Microverse](https://img.shields.io/badge/Microverse-blueviolet)
+# Metrics WebApp
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> This is a mobile web application that displays a list of metrics generated from the [Narrativa API](https://covid19tracking.narrativa.com/index_en.html). This API provides data on COVID-19.
 
-## Available Scripts
+![screenshot](COVID.png)
+## Vidoe Presentation
+[Loom](https://www.loom.com/share/6ec1caeab4424d758d40b6d95229e8bc)
 
-In the project directory, you can run:
+## Milestones completed:
+- Create a new React App using CRA.
+- Install app dependencies.
+- Build file structure for app.
+- Create routes and navigation in app.
+- Display list of items gotten from [Narrativa API](https://covid19tracking.narrativa.com/index_en.html).
+- Writes unit tests for pure functions.
+- Create integration tests using React Testing Library.
+- Style components to match design on [behance](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)).
+- To get started with CRA, see more information below:
+  
+========
 
-### `npm start`
+## Built With
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- React.Js
+- Redux
+  [Live Link](https://admiring-edison-ccbd9a.netlify.app/)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+   ## Getting Started
 
-### `npm test`
+To get a local copy up and running follow these simple example steps.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+- NodeJS - [v16.x](https://nodejs.org/en/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Setup
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+git clone https://github.com/CollinsTatang/React-Capstone.git
+cd ./React-Capstone
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Install
 
-### `npm run eject`
+```bash
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Usage
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Build
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+npm run build
+```
 
-## Learn More
+### Run tests
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm test
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Authors
 
-### Code Splitting
+👤**Makungong Collins Tatang**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- GitHub: [@CollinsTatang1](https://github.com/CollinsTatang)
+- Twitter: [@CollinsTatang1](https://twitter.com/CollinsTatang1)
+- LinkedIn: [Makungong Collins](https://www.linkedin.com/in/makungong-collins/)
 
-### Analyzing the Bundle Size
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Contributions, issues, and feature requests are welcome!
 
-### Making a Progressive Web App
+Feel free to check the [issues page](../../issues/).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Show your support
 
-### Advanced Configuration
+Give a ⭐️ if you like this project!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Acknowledgments
 
-### Deployment
+- Microverse
+- [Microverse design team](https://app.zeplin.io/project/5b35a9e13227086040f8eb75/screen/5b695e29bb8c844f118f9378)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📝 License
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is [MIT](./LICENSE) licensed.

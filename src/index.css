@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
 body {
-  background-color: gray;
+  margin: 0;
+  font-family: 'Lato', 'Gill Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
